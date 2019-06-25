@@ -1,7 +1,5 @@
 
-Spring Framework Documentation 5.1.8.RELEASE
-
-第一部分Core Technologies的配套代码
+Spring5参考指南 第一部分Core Technologies的配套代码
 
 中文翻译链接：
 
