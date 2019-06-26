@@ -1,5 +1,6 @@
 package com.flydean;
 
+import com.flydean.daos.JpaAccountDao;
 import com.flydean.services.PetStoreService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -18,5 +19,9 @@ public class InstContainer {
 
         // use configured instance
         List<String> userList = service.getUsernameList();
+
+        //retrieve accountDao by Alias
+        JpaAccountDao accountDao=(JpaAccountDao)context.getBean("accountDaoAlias");
+
     }
 }

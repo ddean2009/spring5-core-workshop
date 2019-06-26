@@ -21,7 +21,7 @@ public class PetStoreService {
 
     public PetStoreService(JpaAccountDao accountDao){
 
-    log.info("");
+    log.info("init PetStoreService");
     }
 
     /**
