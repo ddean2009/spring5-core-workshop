@@ -9,6 +9,8 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>container</module>
+    <module>bean-creation</module>
+      <module>bean-di</module>
   </modules>
   <packaging>pom</packaging>
 
