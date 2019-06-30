@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="something" class="com.flydean.beans.SomeClass">
+            <property name="accounts">
+                <map>
+                    <entry key="one" value="9.99"/>
+                    <entry key="two" value="2.75"/>
+                    <entry key="six" value="3.99"/>
+                </map>
+            </property>
+        </bean>
+</beans>

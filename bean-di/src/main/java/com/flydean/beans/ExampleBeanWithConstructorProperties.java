@@ -1,9 +1,8 @@
 package com.flydean.beans;
 
-import lombok.Data;
+import java.beans.ConstructorProperties;
 
-@Data
-public class ExampleBean {
+public class ExampleBeanWithConstructorProperties {
 
     // Number of years to calculate the Ultimate Answer
     private int years;
@@ -11,7 +10,8 @@ public class ExampleBean {
     // The Answer to Life, the Universe, and Everything
     private String ultimateAnswer;
 
-    public ExampleBean(int years, String ultimateAnswer) {
+    @ConstructorProperties({"years", "ultimateAnswer"})
+    public ExampleBeanWithConstructorProperties(int years, String ultimateAnswer) {
         this.years = years;
         this.ultimateAnswer = ultimateAnswer;
     }
