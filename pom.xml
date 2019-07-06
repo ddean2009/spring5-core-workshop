@@ -11,6 +11,7 @@
     <module>container</module>
     <module>bean-creation</module>
       <module>bean-di</module>
+      <module>bean-scope</module>
   </modules>
   <packaging>pom</packaging>
 
