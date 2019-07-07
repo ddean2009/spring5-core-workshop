@@ -13,6 +13,7 @@
       <module>bean-di</module>
       <module>bean-scope</module>
       <module>bean-lifecycle</module>
+      <module>ioc-extend</module>
   </modules>
   <packaging>pom</packaging>
 
