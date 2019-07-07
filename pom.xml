@@ -12,6 +12,7 @@
     <module>bean-creation</module>
       <module>bean-di</module>
       <module>bean-scope</module>
+      <module>bean-lifecycle</module>
   </modules>
   <packaging>pom</packaging>
 
