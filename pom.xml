@@ -14,6 +14,7 @@
       <module>bean-scope</module>
       <module>bean-lifecycle</module>
       <module>ioc-extend</module>
+      <module>annotation-config</module>
   </modules>
   <packaging>pom</packaging>
 
