@@ -16,6 +16,7 @@
       <module>ioc-extend</module>
       <module>annotation-config</module>
       <module>component-scan</module>
+      <module>jsr330</module>
   </modules>
   <packaging>pom</packaging>
 
