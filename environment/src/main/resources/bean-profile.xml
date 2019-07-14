@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <!-- other bean definitions -->
+
+        <beans profile="development">
+            <jdbc:embedded-database id="dataSource">
+                <jdbc:script location="classpath:com/bank/config/sql/schema.sql"/>
+                <jdbc:script location="classpath:com/bank/config/sql/test-data.sql"/>
+            </jdbc:embedded-database>
+        </beans>
+
+        <beans profile="production">
+            <jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/datasource"/>
+        </beans>
+</beans>
