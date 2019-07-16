@@ -18,6 +18,7 @@
       <module>component-scan</module>
       <module>jsr330</module>
       <module>environment</module>
+      <module>event</module>
   </modules>
   <packaging>pom</packaging>
 
