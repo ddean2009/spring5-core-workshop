@@ -19,6 +19,10 @@
       <module>jsr330</module>
       <module>environment</module>
       <module>event</module>
+      <module>resources</module>
+      <module>validator</module>
+      <module>beanWrapper-propertyEditor</module>
+      <module>spel</module>
   </modules>
   <packaging>pom</packaging>
 
