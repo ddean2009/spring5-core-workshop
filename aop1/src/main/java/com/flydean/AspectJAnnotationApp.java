@@ -1,5 +1,7 @@
 package com.flydean;
 
+import com.flydean.beans.UsageTracked;
+import com.flydean.service.ServiceA;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -11,6 +13,10 @@ public class AspectJAnnotationApp {
     public static void main(String[] args) {
 
         ClassPathXmlApplicationContext classPathXmlApplicationContext=new ClassPathXmlApplicationContext("aspectJ-annotation.xml");
+
+        ServiceA serviceA=(ServiceA)classPathXmlApplicationContext.getBean("serviceA");
+        UsageTracked usageTracked=(UsageTracked)serviceA;
+        usageTracked.incrementUseCount();
 
     }
 }

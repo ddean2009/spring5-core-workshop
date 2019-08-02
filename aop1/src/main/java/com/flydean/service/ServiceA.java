@@ -8,6 +8,4 @@ import org.springframework.stereotype.Component;
  */
 @Component("serviceA")
 public class ServiceA {
-
-
 }
