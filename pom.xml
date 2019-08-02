@@ -23,6 +23,7 @@
       <module>validator</module>
       <module>beanWrapper-propertyEditor</module>
       <module>spel</module>
+      <module>aop</module>
   </modules>
   <packaging>pom</packaging>
 
