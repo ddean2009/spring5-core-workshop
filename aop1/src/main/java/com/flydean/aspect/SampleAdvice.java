@@ -3,6 +3,7 @@ package com.flydean.aspect;
 import com.flydean.beans.Account;
 import com.flydean.beans.Auditable;
 import com.flydean.beans.MyType;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
@@ -12,12 +13,14 @@ import org.springframework.stereotype.Component;
  * @version SampleAdvice,  2019-08-02 07:20
  */
 
+@Slf4j
 @Aspect
 @Component
 public class SampleAdvice {
 
     @Before("com.flydean.aspect.SystemArchitecture.businessService()")
     public void doAccessCheck() {
+        log.info("in SampleAdvice doAccessCheck");
         // ...
     }
 

@@ -18,5 +18,8 @@ public class AspectJAnnotationApp {
         UsageTracked usageTracked=(UsageTracked)serviceA;
         usageTracked.incrementUseCount();
 
+        serviceA.testA();
+
+
     }
 }
