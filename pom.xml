@@ -25,6 +25,7 @@
       <module>spel</module>
       <module>aop1</module>
     <module>aop2</module>
+      <module>aop-proxy</module>
   </modules>
   <packaging>pom</packaging>
 
