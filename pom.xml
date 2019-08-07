@@ -26,6 +26,7 @@
       <module>aop1</module>
     <module>aop2</module>
       <module>aop-proxy</module>
+      <module>aop-advanced</module>
   </modules>
   <packaging>pom</packaging>
 
