@@ -7,6 +7,8 @@ import org.springframework.context.annotation.ScopeMetadataResolver;
 public class MyScopeResolver implements ScopeMetadataResolver {
     @Override
     public ScopeMetadata resolveScopeMetadata(BeanDefinition definition) {
-        return null;
+        ScopeMetadata scope = new ScopeMetadata();
+        scope.setScopeName(definition.getScope());
+        return scope;
     }
 }
